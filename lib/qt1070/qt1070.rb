@@ -5,8 +5,8 @@ class Qt1070
 
 	I2C_ADDRESS = 0x1B
 
-	def initialize port
-		@i2c = I2C.create port
+	def initialize i2c
+		@i2c = i2c
  	end
 
   def chip_id
